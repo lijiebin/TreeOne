@@ -37,9 +37,24 @@ id | name | level | branch | path
 10 | ------------cate-2-1-2 | 3 | 1 | 2.1.2 
 8 | --------cate-2-2 | 2 | 1 | 2.2
 
-## Basic Query Usage
+## Basic Query Usage Demo
 
-Render whole tree in one query
+- Render whole tree in one query
 ```
 SELECT * FROM `tree` order by rank, path;
+```
+
+- Get all specific level
+```
+SELECT * FROM `tree` where level =2;
+```
+
+- Get one's all descendant
+```
+SELECT * FROM `tree` where level > 1 AND branch = 1 AND path > '0';
+```
+
+- Get one's all descendant
+```
+SELECT * FROM `tree` where level < 3 AND branch = 1 AND `path` < '2.1.2';
 ```
