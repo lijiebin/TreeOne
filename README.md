@@ -1,6 +1,20 @@
 # TreeOne
 A powerfully all-purpose hierarchical tree data structure desgin model as a best practice in development. 
 
+## Table Data Structure
+
+```
+
+CREATE TABLE `catlog` (
+  `id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `level` mediumint(4) NOT NULL DEFAULT '1',
+  `rank` mediumint(4) NOT NULL DEFAULT '0',
+  `path` varchar(50) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  
+```
+
 ##  Sample Rows
 id | name | level | branch | path 
 --- | --- | --- | --- | --- 
