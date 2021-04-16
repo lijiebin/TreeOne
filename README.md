@@ -7,10 +7,10 @@ A powerfully all-purpose hierarchical tree data structure desgin model as a best
 
 CREATE TABLE `catlog` (
   `id` int(11) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `level` mediumint(4) NOT NULL DEFAULT '1',
-  `branch` mediumint(4) NOT NULL DEFAULT '0',
-  `path` varchar(50) NOT NULL DEFAULT '0'
+  `name` varchar(30) NOT NULL, 
+  `level` mediumint(4) NOT NULL DEFAULT '1', // Level number in its barnch
+  `branch` mediumint(4) NOT NULL DEFAULT '0', // Means ancestry flag
+  `path` varchar(50) NOT NULL DEFAULT '0' // Route to forefather
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   
 ```
