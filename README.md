@@ -9,7 +9,7 @@ CREATE TABLE `catlog` (
   `id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL,
   `level` mediumint(4) NOT NULL DEFAULT '1',
-  `rank` mediumint(4) NOT NULL DEFAULT '0',
+  `branch` mediumint(4) NOT NULL DEFAULT '0',
   `path` varchar(50) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   
