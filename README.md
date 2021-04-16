@@ -5,7 +5,7 @@ A powerfully all-purpose hierarchical tree data structure desgin model as a best
 
 ```
 
-CREATE TABLE `catlog` (
+CREATE TABLE `tree` (
   `id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL, 
   `level` mediumint(4) NOT NULL DEFAULT '1', // Level number in its barnch
@@ -36,3 +36,10 @@ id | name | level | branch | path
 9 | ------------cate-2-1-1 | 3 | 1 | 2.1.1 
 10 | ------------cate-2-1-2 | 3 | 1 | 2.1.2 
 8 | --------cate-2-2 | 2 | 1 | 2.2
+
+## Basic Query Usage
+
+Render whole tree in one query
+```
+SELECT * FROM `tree` order by rank, path;
+```
