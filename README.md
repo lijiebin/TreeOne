@@ -15,6 +15,14 @@ CREATE TABLE `catlog` (
   
 ```
 
+## Features
+- Very nifty structure
+- Strong flexibility
+- High Performance
+- Convenient for query
+- Almost cover all development circumstances
+
+
 ##  Sample Rows
 id | name | level | branch | path 
 --- | --- | --- | --- | --- 
