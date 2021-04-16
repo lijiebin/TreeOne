@@ -37,7 +37,7 @@ id | name | level | branch | path
 10 | ------------cate-2-1-2 | 3 | 1 | 2.1.2 
 8 | --------cate-2-2 | 2 | 1 | 2.2
 
-## Basic Query Usage Demo
+## Basic Query Usage
 
 - Render whole tree in one query
 ```
