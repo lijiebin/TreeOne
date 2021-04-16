@@ -54,7 +54,7 @@ SELECT * FROM `tree` where level =2;
 SELECT * FROM `tree` where level > 1 AND branch = 1 AND path > '0';
 ```
 
-- Get one's all descendant
+- Get one's all antecedent
 ```
 SELECT * FROM `tree` where level < 3 AND branch = 1 AND `path` < '2.1.2';
 ```
