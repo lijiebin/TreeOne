@@ -3,7 +3,7 @@ A powerfully all-purpose hierarchical tree data structure desgin model as a best
 
 ## Table Data Structure
 
-```
+```sql
 
 CREATE TABLE `tree` (
   `id` int(11) NOT NULL,
@@ -40,31 +40,31 @@ id | name | level | branch | path
 ## Basic Query Usage
 
 - Render whole tree in one query
-```
+```sql
 SELECT * FROM `tree` ORDER BY `rank`, `path`;
 ```
 
 - Get all specific level
-```
+```sql
 SELECT * FROM `tree` WHERE `level` =2;
 ```
 
 - Get one's parent
-```
+```sql
 SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 0 AND `path` < '1.1.1';
 ```
 
 - Get one's all descendant
-```
+```sql
 SELECT * FROM `tree` WHERE `level` > 1 AND `branch` = 1 AND `path` > '0';
 ```
 
 - Get one's all antecedent
-```
+```sql
 SELECT * FROM `tree` WHERE `level` < 3 AND `branch` = 1 AND `path` < '2.1.2';
 ```
 
 - Get one's all slibings
-```
+```sql
 SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1 AND `path` > '1.1';
 ```
