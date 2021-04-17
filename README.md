@@ -41,12 +41,12 @@ id | name | level | branch | path
 
 - Render whole tree in one query
 ```
-SELECT * FROM `tree` order by rank, path;
+SELECT * FROM `tree` ORDER BY `rank`, `path`;
 ```
 
 - Get all specific level
 ```
-SELECT * FROM `tree` where level =2;
+SELECT * FROM `tree` WHERE `level` =2;
 ```
 
 - Get one's parent
@@ -56,15 +56,15 @@ SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 0 AND `path` < '1.1.1';
 
 - Get one's all descendant
 ```
-SELECT * FROM `tree` WHERE level > 1 AND branch = 1 AND path > '0';
+SELECT * FROM `tree` WHERE `level` > 1 AND `branch` = 1 AND `path` > '0';
 ```
 
 - Get one's all antecedent
 ```
-SELECT * FROM `tree` WHERE level < 3 AND branch = 1 AND `path` < '2.1.2';
+SELECT * FROM `tree` WHERE `level` < 3 AND `branch` = 1 AND `path` < '2.1.2';
 ```
 
 - Get one's all slibings
 ```
-SELECT * FROM `tree` WHERE level = 3 AND branch = 1 AND `path` > '1.1';
+SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1 AND `path` > '1.1';
 ```
