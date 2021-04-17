@@ -54,9 +54,9 @@ SELECT * FROM `tree` WHERE `level` =2;
 SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
 ```
 
-- Get one's child
+- Get one's all Children
 ```sql
-SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = '0';
+SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = '1' AND 'path' < '2.2';
 ```
 
 - Get branch root node
