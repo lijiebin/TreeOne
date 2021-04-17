@@ -58,11 +58,6 @@ SELECT MAX(`level`) FROM `tree`;
 SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
 ```
 
-- Get branch leaf node
-```sql
-SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` DESC LIMIT 1;
-```
-
 - Get one's parent
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
