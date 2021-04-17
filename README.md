@@ -13,8 +13,8 @@ CREATE TABLE `tree` (
   `id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL, 
   `level` mediumint(4) NOT NULL DEFAULT '1', // Level number in its barnch
-  `branch` mediumint(4) NOT NULL DEFAULT '0', // Means ancestry flag
-  `path` varchar(50) NOT NULL DEFAULT '0' // Route to forefather
+  `branch` mediumint(4) NOT NULL DEFAULT '1', // Means ancestry flag
+  `path` varchar(50) NOT NULL DEFAULT '1' // Route to forefather
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
   
 ```
