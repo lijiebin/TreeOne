@@ -70,12 +70,12 @@ SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1 AND `path` > '1.1' AND `
 
 - Get one's all descendant
 ```sql
-SELECT * FROM `tree` WHERE `level` > 1 AND `branch` = 1 AND `path` > '0';
+SELECT * FROM `tree` WHERE `branch` = 1 AND `path` > '1.1' AND `path` < '1.2' ORDER BY `path` ASC;
 ```
 
 - Get one's all ascendant
 ```sql
-SELECT * FROM `tree` WHERE `level` < 3 AND `branch` = 1 AND `path` < '2.1.2';
+SELECT * FROM `tree` WHERE `level` < 3 AND `path` IN ('1.2', '1') ORDER BY `path` ASC
 ```
 
 - Get one's immediately preceding slibing
