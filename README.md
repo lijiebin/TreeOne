@@ -56,7 +56,7 @@ SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 0 AND `path` < '1.1.1';
 
 - Get one's root
 ```sql
-SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 0 AND `path` = '0';
+SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '0';
 ```
 
 - Get one's all descendant
