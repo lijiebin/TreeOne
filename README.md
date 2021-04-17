@@ -98,3 +98,8 @@ SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` < '2.2' ORDER
 SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` > '2.2' ORDER BY `path` ASC LIMIT 1;
 ```
 
+- Get deepest branch
+```sql
+SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` > '2.2' ORDER BY `path` ASC LIMIT 1;
+```
+
