@@ -49,6 +49,11 @@ SELECT * FROM `tree` order by rank, path;
 SELECT * FROM `tree` where level =2;
 ```
 
+- Get one's parent
+```
+SELECT * FROM `tree` where level = 3-1  and path < '1.1.1';
+```
+
 - Get one's all descendant
 ```
 SELECT * FROM `tree` where level > 1 AND branch = 1 AND path > '0';
@@ -58,6 +63,7 @@ SELECT * FROM `tree` where level > 1 AND branch = 1 AND path > '0';
 ```
 SELECT * FROM `tree` where level < 3 AND branch = 1 AND `path` < '2.1.2';
 ```
+
 - Get one's all slibings
 ```
 SELECT * FROM `tree` where level = 3 AND branch = 1 AND `path` > '1.1';
