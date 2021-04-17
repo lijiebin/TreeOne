@@ -73,7 +73,7 @@ SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1 AND `path` > '1.1' AND `
 SELECT * FROM `tree` WHERE `branch` = 1 AND `path` > '1.1' AND `path` < '1.2' ORDER BY `path` ASC;
 ```
 
-- Get one's all ascendant (or called 'Bread-Crumbs')
+- Get one's all ascendant (or called "Bread-Crumbs")
 ```sql
 SELECT * FROM `tree` WHERE `level` < 3 AND `path` IN ('1.2', '1') ORDER BY `path` ASC
 ```
