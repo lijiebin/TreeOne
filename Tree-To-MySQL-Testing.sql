@@ -7,7 +7,7 @@ CREATE TABLE `tree` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `catlog` (`id`, `name`, `level`, `branch`, `path`) VALUES
+INSERT INTO `tree` (`id`, `name`, `level`, `branch`, `path`) VALUES
 (1, 'cate-1', 1, 0, '0'),
 (2, 'cate-2', 1, 1, '0'),
 (3, 'cate-1-1', 2, 0, '1.1'),
@@ -20,11 +20,11 @@ INSERT INTO `catlog` (`id`, `name`, `level`, `branch`, `path`) VALUES
 (10, 'cate-2-1-2', 3, 1, '2.1.2');
 
 
-ALTER TABLE `catlog`
+ALTER TABLE `tree`
   ADD PRIMARY KEY (`id`),
   ADD KEY `rank` (`branch`,`path`),
   ADD KEY `level` (`level`);
 
 
-ALTER TABLE `catlog`
+ALTER TABLE `tree`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
