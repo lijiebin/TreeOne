@@ -51,7 +51,7 @@ SELECT * FROM `tree` where level =2;
 
 - Get one's parent
 ```
-SELECT * FROM `tree` WHERE `level` = 3-1  AND `branch` = 0 AND `path` < '1.1.1';
+SELECT * FROM `tree` WHERE `level` = 3-1 AND `branch` = 0 AND `path` < '1.1.1';
 ```
 
 - Get one's all descendant
