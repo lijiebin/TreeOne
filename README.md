@@ -45,7 +45,7 @@ id | name | level | branch | path
 
 - Render whole tree in one query
 ```sql
-SELECT * FROM `tree` ORDER BY `rank`, `path`;
+SELECT * FROM `tree` ORDER BY `branch`, `path`;
 ```
 
 - Get all specific
