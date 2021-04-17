@@ -48,11 +48,6 @@ id | name | level | branch | path
 SELECT * FROM `tree` ORDER BY `branch`, `path`;
 ```
 
-- Get all specific level
-```sql
-SELECT * FROM `tree` WHERE `level` =2;
-```
-
 - Get max deepth of tree
 ```sql
 SELECT MAX(`level`) FROM `tree`;
@@ -90,7 +85,7 @@ SELECT * FROM `tree` WHERE `level` < 3 AND `branch` = 1 AND `path` < '2.1.2';
 
 - Get one's all slibings
 ```sql
-SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1 AND `path` > '1.1';
+SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1;
 ```
 
 - Get one's immediately preceding slibing
