@@ -48,9 +48,14 @@ id | name | level | branch | path
 SELECT * FROM `tree` ORDER BY `branch`, `path`;
 ```
 
-- Get all specific
+- Get all specific level
 ```sql
 SELECT * FROM `tree` WHERE `level` =2;
+```
+
+- Get max deepth of tree
+```sql
+SELECT MAX(`level`) FROM `tree`;
 ```
 
 - Get branch root node
@@ -98,8 +103,4 @@ SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` < '2.2' ORDER
 SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` > '2.2' ORDER BY `path` ASC LIMIT 1;
 ```
 
-- Get deepest branch
-```sql
-SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` > '2.2' ORDER BY `path` ASC LIMIT 1;
-```
 
