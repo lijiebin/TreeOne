@@ -54,6 +54,11 @@ SELECT * FROM `tree` WHERE `level` =2;
 SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
 ```
 
+- Get one's child
+```sql
+SELECT * FROM `tree` WHERE `level` = 3 `branch` = '0';
+```
+
 - Get branch root node
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
