@@ -54,12 +54,12 @@ SELECT * FROM `tree` WHERE `level` =2;
 SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
 ```
 
-- Get one's root node
+- Get branch root node
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
 ```
 
-- Get one's leaf node
+- Get branch leaf node
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` DESC LIMIT 1;
 ```
