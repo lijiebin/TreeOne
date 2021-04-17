@@ -49,16 +49,6 @@ SELECT * FROM `tree` ORDER BY `rank`, `path`;
 SELECT * FROM `tree` WHERE `level` =2;
 ```
 
-- Get one's parent
-```sql
-SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
-```
-
-- Get one's all Children
-```sql
-SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = '1' AND 'path' < '2.2';
-```
-
 - Get branch root node
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
@@ -67,6 +57,16 @@ SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
 - Get branch leaf node
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` DESC LIMIT 1;
+```
+
+- Get one's parent
+```sql
+SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
+```
+
+- Get one's all Children
+```sql
+SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = '1' AND 'path' < '2.2';
 ```
 
 - Get one's all descendant
