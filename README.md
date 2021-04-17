@@ -55,12 +55,12 @@ SELECT MAX(`level`) FROM `tree`;
 
 - Get branch root node
 ```sql
-SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
+SELECT * FROM `tree` WHERE `branch` = 1 ORDER BY `path` ASC LIMIT 1;
 ```
 
 - Get one's parent
 ```sql
-SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
+SELECT * FROM `tree` WHERE `branch` = 1 AND `path` = '1.1';
 ```
 
 - Get one's all children
