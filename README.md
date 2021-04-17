@@ -1,7 +1,7 @@
-![image](https://user-images.githubusercontent.com/11038908/115105872-32220a80-9f94-11eb-96e0-8e84c30e79f5.png)
 
 # TreeOne
 A powerfully all-purpose hierarchical tree data structure desgin model as a best practice in development. 
+![image](https://user-images.githubusercontent.com/11038908/115105872-32220a80-9f94-11eb-96e0-8e84c30e79f5.png)
 
 ## Table Data Structure
 
