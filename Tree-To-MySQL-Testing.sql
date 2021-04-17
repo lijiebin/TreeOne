@@ -1,4 +1,4 @@
-CREATE TABLE `catlog` (
+CREATE TABLE `tree` (
   `id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL,
   `level` mediumint(4) NOT NULL DEFAULT '1',
