@@ -44,19 +44,24 @@ id | name | level | branch | path
 SELECT * FROM `tree` ORDER BY `rank`, `path`;
 ```
 
-- Get all specific level
+- Get all specific
 ```sql
 SELECT * FROM `tree` WHERE `level` =2;
 ```
 
-- Get one's parent
+- Get one's parent node
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
 ```
 
-- Get one's root
+- Get one's root node
 ```sql
-SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '0';
+SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` ASC LIMIT 1;
+```
+
+- Get one's leaf node
+```sql
+SELECT * FROM `tree` WHERE `branch` = 0 ORDER BY `path` DESC LIMIT 1;
 ```
 
 - Get one's all descendant
