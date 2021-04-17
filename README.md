@@ -49,7 +49,7 @@ SELECT * FROM `tree` ORDER BY `rank`, `path`;
 SELECT * FROM `tree` WHERE `level` =2;
 ```
 
-- Get one's parent node
+- Get one's parent
 ```sql
 SELECT * FROM `tree` WHERE `branch` = 0 AND `path` = '1.1';
 ```
