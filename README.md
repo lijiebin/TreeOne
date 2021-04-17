@@ -83,3 +83,14 @@ SELECT * FROM `tree` WHERE `level` < 3 AND `branch` = 1 AND `path` < '2.1.2';
 ```sql
 SELECT * FROM `tree` WHERE `level` = 3 AND `branch` = 1 AND `path` > '1.1';
 ```
+
+- Get one's immediately preceding slibing
+```sql
+SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` < '2.2' ORDER BY `path` DESC LIMIT 1;
+```
+
+- Get one's immediately succeeding slibing
+```sql
+SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 1 AND `path` > '2.2' ORDER BY `path` ASC LIMIT 1;
+```
+
