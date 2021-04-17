@@ -58,3 +58,7 @@ SELECT * FROM `tree` where level > 1 AND branch = 1 AND path > '0';
 ```
 SELECT * FROM `tree` where level < 3 AND branch = 1 AND `path` < '2.1.2';
 ```
+- Get one's all slibings
+```
+SELECT * FROM `tree` where level = 3 AND branch = 1;
+```
