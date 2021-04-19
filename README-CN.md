@@ -2,6 +2,8 @@
 # TreeOne
 一个适用性功能性极佳的多层级树型数据库存储结构设计模型最佳实践，可广泛用于项目开发任务中。
 
+（`以下示例环境默认均为MySQL`）
+
 ![image](https://user-images.githubusercontent.com/11038908/115105931-6d243e00-9f94-11eb-9ff8-dd10f99061ef.png)
 
 
