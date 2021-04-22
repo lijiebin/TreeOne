@@ -80,12 +80,12 @@ SELECT * FROM `tree` WHERE `branch` = 1 AND `path` > '1.1' AND `path` < '1.2' OR
 SELECT * FROM `tree` WHERE `level` < 3 AND `path` IN ('1.2', '1') ORDER BY `path` ASC
 ```
 
-- Get one's immediately preceding slibing
+- Get one's immediately preceding sibling
 ```sql
 SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 2 AND `path` < '2.2' ORDER BY `path` DESC LIMIT 1;
 ```
 
-- Get one's immediately succeeding slibing
+- Get one's immediately succeeding sibling
 ```sql
 SELECT * FROM `tree` WHERE `level` = 2 AND `branch` = 2 AND `path` > '2.2' ORDER BY `path` ASC LIMIT 1;
 ```
