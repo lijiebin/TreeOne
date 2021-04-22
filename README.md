@@ -1,7 +1,7 @@
 [简体中文](./README-CN.md)
 
 # TreeOne
-A powerfully all-purpose hierarchical tree data structure desgin model as a best practice in development. 
+A powerfully all-purpose hierarchical tree data structure design model as a best practice in development. 
 (Demo default by MySQL)
 
 ![image](https://user-images.githubusercontent.com/11038908/115105931-6d243e00-9f94-11eb-9ff8-dd10f99061ef.png)
